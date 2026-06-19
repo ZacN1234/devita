@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DNS Guide — DeVita, Tastes of Napoli</title>
+<meta name="robots" content="noindex, nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  @page {
+    size: A4;
+    margin: 15mm 18mm;
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: #fffcf7;
+    color: #2a2a2a;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 32px 36px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    border-bottom: 2px solid #EF4D48;
+    padding-bottom: 18px;
+    margin-bottom: 22px;
+  }
+  .header h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #EF4D48;
+    margin-bottom: 4px;
+    letter-spacing: 0.3px;
+  }
+  .header .business-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 6px;
+  }
+  .header .prepared-by {
+    font-size: 12px;
+    color: #777;
+  }
+
+  /* Intro */
+  .intro {
+    font-size: 13.5px;
+    color: #444;
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+
+  /* Email safety box */
+  .email-safety {
+    background: #fef9ec;
+    border: 2px solid #f0c040;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 22px;
+  }
+  .email-safety .safety-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #b8860b;
+    margin-bottom: 6px;
+  }
+  .email-safety p {
+    font-size: 13px;
+    color: #5a4a1a;
+    line-height: 1.55;
+  }
+
+  /* Section headings */
+  h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #EF4D48;
+    margin-bottom: 8px;
+    margin-top: 4px;
+  }
+  h2 .tag {
+    display: inline-block;
+    background: #EF4D48;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 3px 9px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-left: 8px;
+    position: relative;
+    top: -2px;
+  }
+  h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin: 12px 0 6px;
+  }
+  .section-desc {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 10px;
+    line-height: 1.55;
+  }
+
+  /* DNS record boxes */
+  .dns-record {
+    background: #f4f4f8;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    font-family: 'Inter', monospace;
+    font-size: 12.5px;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 2px 10px;
+  }
+  .dns-record .label {
+    font-weight: 600;
+    color: #666;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  .dns-record .value {
+    color: #222;
+    font-weight: 500;
+  }
+  .dns-record .value.highlight {
+    color: #EF4D48;
+    font-weight: 600;
+  }
+
+  /* Option sections */
+  .option-section {
+    background: #fff;
+    border: 1px solid #e8e4df;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+  }
+  .option-section.recommended {
+    border-color: #EF4D48;
+    border-width: 2px;
+  }
+
+  /* Steps */
+  .step {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    align-items: flex-start;
+  }
+  .step-number {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    background: #EF4D48;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 1px;
+  }
+  .step-content {
+    flex: 1;
+  }
+  .step-content p {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.55;
+  }
+
+  /* Nameserver change display */
+  .ns-change {
+    background: #f9f9fb;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 8px 0;
+    font-size: 12.5px;
+  }
+  .ns-old {
+    text-decoration: line-through;
+    color: #999;
+    font-family: 'Inter', monospace;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .ns-new {
+    color: #2e7d32;
+    font-weight: 600;
+    font-family: 'Inter', monospace;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .ns-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+    color: #888;
+  }
+
+  /* Crazy Domains nav list */
+  .nav-steps {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+  }
+  .nav-steps li {
+    font-size: 12.5px;
+    color: #444;
+    padding: 3px 0 3px 18px;
+    position: relative;
+  }
+  .nav-steps li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #EF4D48;
+    font-weight: 600;
+  }
+
+  /* Timing note */
+  .timing-note {
+    background: #f0f4ff;
+    border-left: 3px solid #5b7fc7;
+    border-radius: 0 6px 6px 0;
+    padding: 10px 14px;
+    margin-bottom: 18px;
+    font-size: 12.5px;
+    color: #3a4f7a;
+    line-height: 1.55;
+  }
+  .timing-note strong {
+    color: #2c3e6b;
+  }
+
+  /* "I'll handle" box */
+  .handle-box {
+    background: #f6faf6;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 18px;
+  }
+  .handle-box h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2e7d32;
+    margin: 0 0 10px;
+  }
+  .handle-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px;
+  }
+  .handle-box ul li {
+    font-size: 13px;
+    color: #3a5a3a;
+    padding: 3px 0;
+    padding-left: 22px;
+    position: relative;
+    line-height: 1.5;
+  }
+  .handle-box ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #4caf50;
+    font-weight: 700;
+  }
+  .handle-box .cta {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2e7d32;
+    margin-top: 6px;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    border-top: 1px solid #e0dcd6;
+    padding-top: 14px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #999;
+  }
+  .footer strong {
+    color: #777;
+  }
+
+  /* Print styles */
+  @media print {
+    body {
+      padding: 0;
+      background: #fff;
+    }
+    .option-section.recommended {
+      border-color: #EF4D48 !important;
+    }
+    .email-safety {
+      border-color: #f0c040 !important;
+      background: #fef9ec !important;
+    }
+    .handle-box {
+      border-color: #4caf50 !important;
+      background: #f6faf6 !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Connecting Your Domain</h1>
+  <div class="business-name">DeVita — Tastes of Napoli</div>
+  <div class="prepared-by">Prepared by Zac Nowytarger — 0401 102 066</div>
+</div>
+
+<!-- Intro -->
+<p class="intro">
+  Your domain <strong>devita.net.au</strong> is currently managed through Cloudflare (set up by your web developer or hosting provider). To connect your new website, we have two simple options.
+</p>
+
+<!-- Email Safety -->
+<div class="email-safety">
+  <div class="safety-title">⚠️ Your Email Will NOT Be Affected</div>
+  <p>I'll set up all your email records (MX, SPF, DKIM) on the new system before we make any changes. I won't ask you to do anything until everything is tested and ready.</p>
+</div>
+
+<!-- Option A -->
+<div class="option-section recommended">
+  <h2>Option A: Release the Domain (Easiest) <span class="tag">Recommended</span></h2>
+  <p class="section-desc">Your domain is currently on someone else's Cloudflare account (likely your web developer or hosting provider). The quickest path is to ask them to <strong>remove devita.net.au from their Cloudflare account</strong>. This frees the domain so I can add it to mine.</p>
+
+  <h3>What to ask your web person</h3>
+  <p class="section-desc">Send them a message like this:</p>
+  <div style="background:#f4f4f8;border:1px solid #ddd;border-radius:6px;padding:12px 16px;margin-bottom:12px;font-size:12.5px;color:#444;line-height:1.6;font-style:italic;">
+    "Hi, I'm moving my website for devita.net.au to a new provider. Could you please remove devita.net.au from your Cloudflare account? The domain will stay registered with Crazy Domains — I just need it released from your Cloudflare so my new web person can set it up."
+  </div>
+
+  <h3>Once they've done that, I take over</h3>
+  <p class="section-desc">I'll add devita.net.au to my Cloudflare, set up all DNS records (including email), and connect your new website. You may need to update nameservers at Crazy Domains (I'll walk you through it — see Option B, Step 2).</p>
+
+  <p class="section-desc" style="margin-top:10px;">Email stays exactly as it is — I'll copy all email records before anything changes.</p>
+  <p class="section-desc" style="color:#777;font-style:italic;">If you don't know who set up Cloudflare, or can't reach them, we'll go straight to Option B — it works just as well.</p>
+</div>
+
+<!-- Option B -->
+<div class="option-section">
+  <h2>Option B: Change Nameservers at Crazy Domains</h2>
+  <p class="section-desc" style="margin-bottom:14px;">If you can't reach your current web person, no worries — we just update the nameservers at your domain registrar. Here's how:</p>
+
+  <div class="step">
+    <div class="step-number">1</div>
+    <div class="step-content">
+      <p><strong>I set everything up first.</strong> I'll add devita.net.au on my Cloudflare account and copy all your existing DNS records — including email — before we change anything.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">2</div>
+    <div class="step-content">
+      <p><strong>Update nameservers at Crazy Domains.</strong> You (or I can help you) log into your registrar:</p>
+      <ul class="nav-steps">
+        <li>Go to <strong>crazydomains.com.au</strong></li>
+        <li>Click <strong>My Account</strong> and sign in</li>
+        <li>Go to your <strong>Domain Manager</strong></li>
+        <li>Click on <strong>devita.net.au</strong></li>
+        <li>Click the <strong>Name Servers</strong> tab</li>
+        <li>Change the nameservers:</li>
+      </ul>
+      <div class="ns-change">
+        <div class="ns-label">Remove (old):</div>
+        <span class="ns-old">kara.ns.cloudflare.com</span>
+        <span class="ns-old">marek.ns.cloudflare.com</span>
+        <div class="ns-label" style="margin-top:8px;">Replace with (new):</div>
+        <span class="ns-new">[ Zac's nameserver 1 — will be provided ]</span>
+        <span class="ns-new">[ Zac's nameserver 2 — will be provided ]</span>
+      </div>
+      <p style="font-size:12px;color:#888;margin-top:4px;">Click <strong>Save Records</strong> to confirm.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">3</div>
+    <div class="step-content">
+      <p><strong>Wait for it to take effect.</strong> Usually under an hour, but can take up to 24 hours.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">4</div>
+    <div class="step-content">
+      <p><strong>I handle everything else</strong> — SSL certificate, DNS records, connecting the domain to your new site.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Timing note -->
+<div class="timing-note">
+  <strong>Timing:</strong> Changes usually take effect within an hour, but can take up to 24 hours. You might see the old site and new site alternating during this period — that's completely normal.
+</div>
+
+<!-- I'll Handle Everything Box -->
+<div class="handle-box">
+  <h3>I'll Handle Everything Else</h3>
+  <p style="font-size:13px;color:#3a5a3a;margin-bottom:10px;">Once you've done your part, I'll take care of:</p>
+  <ul>
+    <li>Setting up your SSL certificate (the padlock icon)</li>
+    <li>Connecting devita.net.au to your new website</li>
+    <li>Making sure www.devita.net.au works too</li>
+    <li>Removing the old site's noindex tags so Google can find you</li>
+    <li>Keeping your email working perfectly</li>
+  </ul>
+  <div class="cta">Questions? Call me anytime: 0401 102 066</div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  Prepared for <strong>Salvatore Leva</strong> — DeVita, Tastes of Napoli
+</div>
+
+</body>
+</html>

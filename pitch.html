@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Pitch — DeVita, Tastes of Napoli</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  @page {
+    size: A4;
+    margin: 12mm 14mm;
+  }
+
+  html, body {
+    font-family: 'Inter', sans-serif;
+    background: #f0ede8;
+    color: #2B161B;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 285mm;
+    max-width: 210mm;
+    background: #fffcf7;
+    margin: 20px auto;
+    padding: 32mm 18mm 18mm 18mm;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.08);
+  }
+
+  .page-1 { page-break-after: always; }
+
+  /* Decorative corner blobs */
+  .page::before,
+  .page::after {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: #EF4D48;
+    opacity: 0.08;
+    z-index: 0;
+  }
+  .page-1::before {
+    top: -60px; left: -60px;
+    border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+  }
+  .page-1::after {
+    bottom: -60px; right: -60px;
+    border-radius: 40% 60% 30% 70% / 60% 40% 50% 50%;
+  }
+  .page-2::before {
+    top: -60px; right: -60px; left: auto;
+    border-radius: 50% 60% 40% 70% / 40% 50% 60% 30%;
+  }
+  .page-2::after {
+    bottom: -60px; left: -60px;
+    border-radius: 70% 30% 60% 40% / 50% 60% 40% 50%;
+  }
+
+  .page > * { position: relative; z-index: 1; }
+
+  /* Logo container top-right */
+  .logo-badge {
+    position: absolute;
+    top: 14mm;
+    right: 18mm;
+    background: #2B161B;
+    border-radius: 10px;
+    padding: 6px 12px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+  .logo-badge img {
+    max-height: 40px;
+    width: auto;
+    display: block;
+  }
+
+  /* Typography */
+  .label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #EF4D48;
+    margin-bottom: 6px;
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #2B161B;
+    margin-bottom: 18px;
+    line-height: 1.15;
+  }
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #2B161B;
+    margin-bottom: 14px;
+    line-height: 1.2;
+  }
+  p, li {
+    font-size: 11.5px;
+    line-height: 1.65;
+    color: #3a2a2e;
+  }
+  p + p { margin-top: 10px; }
+
+  /* QR box */
+  .qr-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #f7f3ee;
+    border: 1px solid #e8e0d6;
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 18px 0;
+  }
+  .qr-box img {
+    width: 72px;
+    height: 72px;
+    border-radius: 6px;
+  }
+  .qr-box .qr-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2B161B;
+  }
+  .qr-box .qr-url {
+    font-size: 10.5px;
+    color: #888;
+    margin-top: 2px;
+    font-family: 'Inter', monospace;
+  }
+
+  /* Pricing box */
+  .pricing-box {
+    border: 1.5px solid #e0d8cf;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 16px 0;
+    text-align: center;
+    background: #fffcf7;
+  }
+  .pricing-box .price {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #EF4D48;
+    margin-bottom: 4px;
+  }
+  .pricing-box .price-sub {
+    font-size: 11px;
+    color: #666;
+    line-height: 1.55;
+  }
+
+  /* Closing & sign-off */
+  .closing {
+    margin: 16px 0 10px;
+    font-style: italic;
+    font-size: 11.5px;
+    color: #5a4a4e;
+  }
+  .sign-off {
+    margin-top: 12px;
+  }
+  .sign-off .name {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2B161B;
+  }
+  .sign-off .contact {
+    font-size: 10.5px;
+    color: #666;
+    margin-top: 2px;
+    line-height: 1.6;
+  }
+  .sign-off .zac-qr {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .sign-off .zac-qr img {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+  }
+  .sign-off .zac-qr span {
+    font-size: 10px;
+    color: #888;
+    font-weight: 500;
+  }
+
+  /* Page footer */
+  .page-footer {
+    position: absolute;
+    bottom: 14mm;
+    left: 18mm;
+    right: 18mm;
+    text-align: center;
+    z-index: 1;
+  }
+  .page-footer .footer-main {
+    font-family: 'Playfair Display', serif;
+    font-size: 10.5px;
+    color: #999;
+    font-style: italic;
+  }
+  .page-footer .footer-sub {
+    font-size: 9px;
+    color: #bbb;
+    margin-top: 2px;
+  }
+
+  /* ========== PAGE 2 ========== */
+  .page-2 { padding-top: 22mm; }
+
+  /* Comparison table */
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.2px;
+    margin: 14px 0 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e0d8cf;
+  }
+  .comparison-table th {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 10.5px;
+    padding: 10px 10px;
+    text-align: left;
+  }
+  .comparison-table th.feature-col {
+    background: #f7f3ee;
+    color: #666;
+    width: 17%;
+  }
+  .comparison-table th.old-col {
+    background: #fce8e6;
+    color: #c0392b;
+    width: 41.5%;
+  }
+  .comparison-table th.new-col {
+    background: #e6f4ea;
+    color: #1e7e34;
+    width: 41.5%;
+  }
+  .comparison-table td {
+    padding: 8px 10px;
+    border-top: 1px solid #eee;
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  .comparison-table tr:nth-child(even) td { background: #fdfbf8; }
+  .comparison-table td:first-child {
+    font-weight: 600;
+    color: #555;
+    font-size: 10px;
+  }
+  .comparison-table .icon-bad { color: #d44; margin-right: 3px; }
+  .comparison-table .icon-good { color: #1e7e34; margin-right: 3px; }
+
+  /* What's Included */
+  .included-section { margin-top: 20px; }
+  .included-section h2 { margin-bottom: 12px; }
+  .included-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 28px;
+  }
+  .included-item {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 11.5px;
+    line-height: 1.6;
+    color: #3a2a2e;
+  }
+  .included-item .check {
+    color: #1e7e34;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  /* Print overrides */
+  @media print {
+    html, body { background: white; }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      width: 100%;
+      max-width: 100%;
+      padding: 8mm 10mm 14mm 10mm;
+    }
+    .page-1 {
+      page-break-after: always;
+      min-height: auto;
+    }
+    .page-2 {
+      page-break-before: always;
+      page-break-after: avoid;
+    }
+    .logo-badge { top: 6mm; right: 10mm; }
+    .page-footer { bottom: 6mm; left: 10mm; right: 10mm; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== PAGE 1 ==================== -->
+<div class="page page-1">
+
+  <div class="logo-badge">
+    <img src="images/logo.png" alt="DeVita logo">
+  </div>
+
+  <div class="label">A Note From a Local 15-Year-Old</div>
+  <h1>Hi, I'm Zac</h1>
+
+  <p>I'm a 15-year-old from Manly 2095, and I run a small web design business alongside my clothing brand at the beachfront markets.</p>
+
+  <p>I walk past DeVita all the time — I know how popular you guys are. 4.4 stars on Google with over a thousand reviews, and you've been going strong for 13 years. That's seriously impressive.</p>
+
+  <p>But I reckon your website isn't doing you justice. The menu is buried in PDFs that Google can't even read, the site takes ages to load on mobile, and there's no way for AI search engines like ChatGPT or Google AI to find your hours, your menu, or what makes you special.</p>
+
+  <p>So I rebuilt it. Completely free, no strings attached.</p>
+
+  <p>Your new website has your full menu with every dish and price right on the page, real customer reviews, your story about the oven shipped from Naples — all optimised so Google and AI search engines can actually find you.</p>
+
+  <!-- QR to new site -->
+  <div class="qr-box">
+    <img src="images/devita-qr.png" alt="QR code to new website">
+    <div>
+      <div class="qr-text">Scan to see your new website &rarr;</div>
+      <div class="qr-url">https://devita.pages.dev/</div>
+    </div>
+  </div>
+
+  <!-- Pricing -->
+  <div class="pricing-box">
+    <div class="price">$30/month</div>
+    <div class="price-sub">No setup fee. No lock-in contract. Cancel anytime.<br>Includes hosting, updates, SEO, and ongoing support.</div>
+  </div>
+
+  <!-- Closing -->
+  <p class="closing">If it's not for you, that's completely fine. No awkward follow-ups, I promise.<br>But if you like what you see, I'd love to chat.</p>
+
+  <!-- Sign-off -->
+  <div class="sign-off">
+    <div class="name">Zac Nowytarger</div>
+    <div class="contact">
+      Phone: 0401 102 066<br>
+      Email: zacmanzacmanoz@gmail.com
+    </div>
+    <div class="zac-qr">
+      <img src="images/zac-website-qr.png" alt="QR code to Zac's website">
+      <span>My website &rarr;</span>
+    </div>
+  </div>
+
+  <!-- Page 1 footer -->
+  <div class="page-footer">
+    <div class="footer-main">Designed for DeVita — Tastes of Napoli</div>
+    <div class="footer-sub">Authentic Neapolitan pizza in Manly since 2013</div>
+  </div>
+
+</div>
+
+<!-- ==================== PAGE 2 ==================== -->
+<div class="page page-2">
+
+  <h2>What Your New Website Does Better</h2>
+
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th class="feature-col">Feature</th>
+        <th class="old-col">Your Current Site</th>
+        <th class="new-col">Your New Site</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Website Speed</td>
+        <td><span class="icon-bad">&#10007;</span> Slow WordPress — 4+ second load</td>
+        <td><span class="icon-good">&#10003;</span> Lightning-fast static HTML — loads instantly</td>
+      </tr>
+      <tr>
+        <td>Google Search Data</td>
+        <td><span class="icon-bad">&#10007;</span> No structured data — Google can't read your info</td>
+        <td><span class="icon-good">&#10003;</span> Full JSON-LD schema — Google shows your hours, rating, menu</td>
+      </tr>
+      <tr>
+        <td>AI Search</td>
+        <td><span class="icon-bad">&#10007;</span> Invisible to AI search engines</td>
+        <td><span class="icon-good">&#10003;</span> Fully optimised — 16 FAQ answers AI can quote directly</td>
+      </tr>
+      <tr>
+        <td>Menu</td>
+        <td><span class="icon-bad">&#10007;</span> Buried in PDF downloads — not searchable</td>
+        <td><span class="icon-good">&#10003;</span> Every dish and price on the page, searchable by Google</td>
+      </tr>
+      <tr>
+        <td>Customer Reviews</td>
+        <td><span class="icon-bad">&#10007;</span> None shown on site</td>
+        <td><span class="icon-good">&#10003;</span> 6 real reviews displayed with ratings from 3 platforms</td>
+      </tr>
+      <tr>
+        <td>Your Story</td>
+        <td><span class="icon-bad">&#10007;</span> Brief generic text</td>
+        <td><span class="icon-good">&#10003;</span> Full story — the Naples oven, your dough technique, 13 years</td>
+      </tr>
+      <tr>
+        <td>Mobile Experience</td>
+        <td><span class="icon-bad">&#10007;</span> Clunky on phones</td>
+        <td><span class="icon-good">&#10003;</span> Perfectly responsive on every screen size</td>
+      </tr>
+      <tr>
+        <td>Booking</td>
+        <td><span class="icon-bad">&#10007;</span> Basic link</td>
+        <td><span class="icon-good">&#10003;</span> Prominent "Book a Table" buttons throughout</td>
+      </tr>
+      <tr>
+        <td>Photos</td>
+        <td><span class="icon-bad">&#10007;</span> Small gallery</td>
+        <td><span class="icon-good">&#10003;</span> Full masonry gallery with hover effects</td>
+      </tr>
+      <tr>
+        <td>SEO &amp; Local Search</td>
+        <td><span class="icon-bad">&#10007;</span> Minimal — generic meta tags</td>
+        <td><span class="icon-good">&#10003;</span> Title, meta, geo tags, Open Graph, 49 mentions of "Manly"</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- What's Included -->
+  <div class="included-section">
+    <h2>What's Included</h2>
+    <div class="included-grid">
+      <div class="included-item"><span class="check">&#10003;</span> Custom-designed modern website</div>
+      <div class="included-item"><span class="check">&#10003;</span> Mobile responsive design</div>
+      <div class="included-item"><span class="check">&#10003;</span> Hosting on Cloudflare (fast &amp; free)</div>
+      <div class="included-item"><span class="check">&#10003;</span> Unlimited updates and edits</div>
+      <div class="included-item"><span class="check">&#10003;</span> SEO &amp; AI search optimisation</div>
+      <div class="included-item"><span class="check">&#10003;</span> Ongoing support from Zac</div>
+    </div>
+  </div>
+
+  <!-- Page 2 footer -->
+  <div class="page-footer">
+    <div class="footer-main">Designed for DeVita — Tastes of Napoli</div>
+    <div class="footer-sub">Authentic Neapolitan pizza in Manly since 2013</div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,2502 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>DeVita — Tastes of Napoli | Authentic Neapolitan Pizza & Pasta in Manly, Sydney</title>
+    <meta name="description" content="DeVita — Tastes of Napoli serves authentic wood-fired Neapolitan pizza and traditional Italian pasta in Manly, Sydney. Dine-in, BYO wine, takeaway. Call 0481 363 791. Open since 2013.">
+    <link rel="canonical" href="https://devita.net.au/">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+
+    <!-- Geo Meta Tags -->
+    <meta name="geo.region" content="AU-NSW">
+    <meta name="geo.placename" content="Manly">
+    <meta name="geo.position" content="-33.7969;151.2875">
+    <meta name="ICBM" content="-33.7969, 151.2875">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="DeVita — Tastes of Napoli | Authentic Neapolitan Pizza & Pasta in Manly, Sydney">
+    <meta property="og:description" content="Wood-fired Neapolitan pizza from an oven shipped brick by brick from Naples. Authentic Italian dining in Manly since 2013. BYO wine welcome.">
+    <meta property="og:image" content="https://devita.net.au/images/pizza-napoli.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Wood-fired Neapolitan pizza at DeVita restaurant in Manly, Sydney">
+    <meta property="og:url" content="https://devita.net.au/">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:locale" content="en_AU">
+    <meta property="og:site_name" content="DeVita — Tastes of Napoli">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DeVita — Tastes of Napoli | Authentic Neapolitan Pizza & Pasta in Manly, Sydney">
+    <meta name="twitter:description" content="Wood-fired Neapolitan pizza from an oven shipped brick by brick from Naples. Authentic Italian dining in Manly since 2013.">
+    <meta name="twitter:image" content="https://devita.net.au/images/pizza-napoli.jpg">
+    <meta name="twitter:image:alt" content="Wood-fired Neapolitan pizza at DeVita restaurant in Manly, Sydney">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ========== RESET & BASE ========== */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #F7F3F5;
+            color: #2B161B;
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; line-height: 1.3; color: #2B161B; }
+        a { color: #EF4D48; text-decoration: none; transition: color 0.3s ease; }
+        a:hover { color: #D93B36; }
+        img { max-width: 100%; height: auto; display: block; }
+        ul { list-style: none; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .section-padding { padding: 100px 0; }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .section-subtitle {
+            text-align: center;
+            color: #453E3E;
+            font-size: 1.1rem;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .accent-text { color: #EF4D48; }
+        .gold-text { color: #D4A853; }
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+        .btn-primary {
+            background: #EF4D48;
+            color: #fff;
+            border: 2px solid #EF4D48;
+        }
+        .btn-primary:hover {
+            background: #D93B36;
+            border-color: #D93B36;
+            color: #fff;
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+        .btn-secondary:hover {
+            background: #fff;
+            color: #2B161B;
+        }
+
+        /* ========== NAVIGATION ========== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 16px 0;
+            transition: background-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+        }
+        .navbar.scrolled {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar-logo img {
+            height: 50px;
+            width: auto;
+        }
+        .navbar.scrolled .navbar-logo img {
+            height: 40px;
+            filter: invert(1) hue-rotate(180deg);
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+        .nav-links a {
+            color: #fff;
+            font-weight: 400;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover { color: #EF4D48; }
+        .navbar.scrolled .nav-links a { color: #2B161B; }
+        .navbar.scrolled .nav-links a:hover { color: #EF4D48; }
+        .navbar.scrolled .hamburger-label span { background: #2B161B; }
+        .nav-phone {
+            background: #EF4D48;
+            color: #fff !important;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+        .nav-phone:hover {
+            background: #D93B36;
+            color: #fff !important;
+        }
+
+        /* Hamburger Menu */
+        .hamburger-toggle { display: none; }
+        .hamburger-label {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            cursor: pointer;
+            width: 30px;
+            height: 24px;
+            z-index: 1001;
+        }
+        .hamburger-label span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #fff;
+            transition: all 0.3s ease;
+        }
+        .hamburger-toggle:checked ~ .hamburger-label span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger-toggle:checked ~ .hamburger-label span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-toggle:checked ~ .hamburger-label span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* ========== HERO ========== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: url('images/pizza-napoli.jpg') center center / cover no-repeat;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(26, 20, 18, 0.7);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 24px;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            letter-spacing: 1px;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+        .hero h1 { color: #fff; }
+        .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        /* ========== QUICK INFO STRIP ========== */
+        .quick-info {
+            background: #fff;
+            border-top: 2px solid #2B161B;
+            border-bottom: 2px solid #2B161B;
+            padding: 20px 0;
+        }
+        .quick-info .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .quick-info-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+            color: #2B161B;
+        }
+        .quick-info-icon {
+            font-size: 1.3rem;
+            color: #EF4D48;
+            width: 24px;
+            text-align: center;
+        }
+        .quick-info-item .gold-text { font-weight: 700; }
+
+        /* ========== ABOUT ========== */
+        .about { background: #F7F3F5; }
+        .about-quote {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+        .about-quote blockquote {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-style: italic;
+            line-height: 1.6;
+            color: #2B161B;
+            position: relative;
+            padding: 0 20px;
+        }
+        .about-quote blockquote::before {
+            content: '\201C';
+            font-size: 5rem;
+            color: #EF4D48;
+            position: absolute;
+            top: -30px;
+            left: -10px;
+            font-family: 'Playfair Display', serif;
+            line-height: 1;
+        }
+        .about-definition {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #453E3E;
+            max-width: 800px;
+            margin: 0 auto 60px;
+            line-height: 1.8;
+        }
+        .about-row {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        .about-row.reverse { flex-direction: row-reverse; }
+        .about-text { flex: 1; }
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .about-text p {
+            color: #453E3E;
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+        .about-image {
+            flex: 1;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px solid #2B161B;
+        }
+        .about-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* ========== MENU ========== */
+        .menu { background: #fff; }
+        .menu-intro {
+            text-align: center;
+            color: #453E3E;
+            margin-bottom: 40px;
+            font-size: 1rem;
+        }
+        .accordion { max-width: 900px; margin: 0 auto; }
+        .accordion-item {
+            border-bottom: 1px solid rgba(43, 22, 27, 0.15);
+        }
+        .accordion-toggle { display: none; }
+        .accordion-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            cursor: pointer;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2B161B;
+            transition: color 0.3s ease;
+            user-select: none;
+        }
+        .accordion-label:hover { color: #EF4D48; }
+        .accordion-label::after {
+            content: '+';
+            font-size: 1.6rem;
+            font-weight: 300;
+            color: #EF4D48;
+            transition: transform 0.3s ease;
+        }
+        .accordion-toggle:checked ~ .accordion-label::after {
+            content: '\2212';
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+        .accordion-toggle:checked ~ .accordion-content {
+            max-height: 5000px;
+        }
+        .accordion-inner {
+            padding: 0 0 30px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 14px 0;
+            border-bottom: 1px dashed rgba(43, 22, 27, 0.12);
+        }
+        .menu-item:last-child { border-bottom: none; }
+        .menu-item-info { flex: 1; padding-right: 20px; }
+        .menu-item-name {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #2B161B;
+        }
+        .menu-item-desc {
+            font-size: 0.9rem;
+            color: #453E3E;
+            margin-top: 4px;
+            line-height: 1.5;
+        }
+        .menu-item-price {
+            font-weight: 700;
+            color: #EF4D48;
+            white-space: nowrap;
+            font-size: 1rem;
+        }
+        .menu-note {
+            background: rgba(239, 77, 72, 0.08);
+            border-left: 3px solid #EF4D48;
+            padding: 12px 16px;
+            margin-top: 16px;
+            font-size: 0.9rem;
+            color: #453E3E;
+            border-radius: 0 6px 6px 0;
+        }
+        .menu-size-note {
+            font-size: 0.85rem;
+            color: #453E3E;
+            font-style: italic;
+            padding: 8px 0 4px;
+        }
+
+        /* ========== GALLERY ========== */
+        .gallery { background: #F7F3F5; }
+        .gallery-grid {
+            column-count: 3;
+            column-gap: 16px;
+        }
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 16px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid #2B161B;
+        }
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* ========== TESTIMONIALS ========== */
+        .testimonials { background: #fff; }
+        .ratings-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+        .rating-badge {
+            background: #fff;
+            border: 2px solid #2B161B;
+            border-radius: 12px;
+            padding: 24px 36px;
+            text-align: center;
+            min-width: 220px;
+        }
+        .rating-badge-source {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2B161B;
+        }
+        .rating-badge-stars {
+            color: #D4A853;
+            font-size: 1.3rem;
+            letter-spacing: 3px;
+            margin-bottom: 6px;
+        }
+        .rating-badge-score {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #D4A853;
+        }
+        .rating-badge-count {
+            font-size: 0.85rem;
+            color: #453E3E;
+            margin-top: 4px;
+        }
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+        .review-card {
+            background: #fff;
+            border: 2px solid #2B161B;
+            border-radius: 12px;
+            padding: 32px;
+        }
+        .review-card blockquote {
+            font-style: italic;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: #2B161B;
+        }
+        .review-card blockquote::before {
+            content: '\201C';
+            font-size: 2rem;
+            color: #EF4D48;
+            font-family: 'Playfair Display', serif;
+            line-height: 0;
+            vertical-align: -0.3em;
+            margin-right: 4px;
+        }
+        .review-author {
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .review-source {
+            color: #453E3E;
+            font-size: 0.85rem;
+        }
+        .review-stars {
+            color: #D4A853;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        /* ========== FAQ ========== */
+        .faq { background: #F7F3F5; }
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item {
+            border-bottom: 1px solid rgba(43, 22, 27, 0.15);
+        }
+        .faq-toggle { display: none; }
+        .faq-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #2B161B;
+            transition: color 0.3s ease;
+            gap: 16px;
+        }
+        .faq-label:hover { color: #EF4D48; }
+        .faq-label::after {
+            content: '+';
+            font-size: 1.4rem;
+            color: #EF4D48;
+            flex-shrink: 0;
+        }
+        .faq-toggle:checked ~ .faq-label::after {
+            content: '\2212';
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+        .faq-toggle:checked ~ .faq-answer {
+            max-height: 500px;
+        }
+        .faq-answer p {
+            padding: 0 0 24px;
+            color: #453E3E;
+            line-height: 1.8;
+        }
+
+        /* ========== CONTACT ========== */
+        .contact { background: #fff; }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+        }
+        .contact-col h3 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .contact-col p, .contact-col address {
+            color: #453E3E;
+            font-style: normal;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+        .contact-col a { color: #EF4D48; }
+        .contact-map {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            border: 2px solid #2B161B;
+            margin-bottom: 16px;
+        }
+        .hours-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .hours-table tr {
+            border-bottom: 1px solid rgba(43, 22, 27, 0.12);
+        }
+        .hours-table td {
+            padding: 10px 0;
+            color: #453E3E;
+        }
+        .hours-table td:first-child {
+            font-weight: 700;
+            color: #2B161B;
+            width: 45%;
+        }
+        .hours-note {
+            font-size: 0.85rem;
+            color: #453E3E;
+            margin-top: 12px;
+        }
+        .contact-social {
+            display: flex;
+            gap: 16px;
+            margin: 16px 0;
+        }
+        .contact-social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #2B161B;
+            color: #fff;
+            font-size: 1.2rem;
+            transition: background 0.3s ease;
+        }
+        .contact-social a:hover { background: #EF4D48; color: #fff; }
+        .contact-landmarks {
+            font-size: 0.9rem;
+            color: #453E3E;
+            line-height: 1.7;
+            margin-top: 16px;
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            background: #2B161B;
+            padding: 60px 0 30px;
+            border-top: none;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-brand img {
+            height: 45px;
+            margin-bottom: 16px;
+        }
+        .footer-brand p {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            max-width: 280px;
+        }
+        .footer-links h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #fff;
+        }
+        .footer-links ul li {
+            margin-bottom: 8px;
+        }
+        .footer-links ul li a {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+        .footer-links ul li a:hover { color: #EF4D48; }
+        .footer-social {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+        }
+        .footer-social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            transition: background 0.3s ease;
+        }
+        .footer-social a:hover { background: #EF4D48; color: #fff; }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.15);
+            padding-top: 24px;
+            text-align: center;
+        }
+        .footer-bottom p {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.85rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 1024px) {
+            .hero h1 { font-size: 3.2rem; }
+            .about-row { gap: 40px; }
+            .contact-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            .hamburger-label { display: flex; }
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background: #fff;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 80px 32px 32px;
+                gap: 24px;
+                transition: right 0.3s ease;
+                box-shadow: -4px 0 20px rgba(0,0,0,0.15);
+            }
+            .nav-links a { color: #2B161B !important; }
+            .nav-links a:hover { color: #EF4D48 !important; }
+            .hamburger-toggle:checked ~ .nav-links {
+                right: 0;
+            }
+            .hero h1 { font-size: 2.6rem; }
+            .hero p { font-size: 1.05rem; }
+            .section-title { font-size: 2rem; }
+            .about-row, .about-row.reverse {
+                flex-direction: column;
+            }
+            .about-image img { height: 300px; }
+            .about-quote blockquote { font-size: 1.3rem; }
+            .gallery-grid { column-count: 2; }
+            .reviews-grid { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .ratings-row { gap: 20px; }
+            .rating-badge { min-width: 180px; padding: 20px 24px; }
+            .footer-inner { flex-direction: column; }
+            .quick-info .container {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+            .quick-info-item { justify-content: center; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 0.95rem; }
+            .section-title { font-size: 1.7rem; }
+            .section-padding { padding: 60px 0; }
+            .gallery-grid { column-count: 2; }
+            .rating-badge { min-width: 150px; }
+            .accordion-label { font-size: 1.2rem; }
+            .about-quote blockquote { font-size: 1.1rem; }
+        }
+
+        /* ========== EYE-CATCHING ENHANCEMENTS ========== */
+
+        /* Slow hero background zoom */
+        @keyframes heroZoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.08); }
+        }
+        .hero {
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('images/pizza-napoli.jpg') center center / cover no-repeat;
+            animation: heroZoom 20s ease-in-out infinite alternate;
+            z-index: 0;
+        }
+        .hero::before {
+            z-index: 1;
+        }
+        .hero-content {
+            z-index: 2;
+        }
+
+        /* Hero heading accent underline */
+        .hero h1 span {
+            position: relative;
+        }
+        .hero h1 span::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #EF4D48;
+        }
+
+        /* Italian flag accent stripe under hero */
+        .italian-stripe {
+            height: 6px;
+            background: linear-gradient(90deg, #009246 33.33%, #fff 33.33%, #fff 66.66%, #CE2B37 66.66%);
+        }
+
+        /* Scroll-reveal animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .reveal {
+            opacity: 0;
+            transition: none;
+        }
+        .reveal.visible {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        .reveal-left.visible {
+            animation: fadeInLeft 0.8s ease forwards;
+        }
+        .reveal-right.visible {
+            animation: fadeInRight 0.8s ease forwards;
+        }
+        .reveal-delay-1 { animation-delay: 0.15s !important; }
+        .reveal-delay-2 { animation-delay: 0.3s !important; }
+        .reveal-delay-3 { animation-delay: 0.45s !important; }
+
+        /* Bolder section titles with red accent line */
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #EF4D48;
+            margin: 16px auto 0;
+        }
+
+        /* Card hover lift effect */
+        .review-card,
+        .rating-badge {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .review-card:hover,
+        .rating-badge:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(43, 22, 27, 0.12);
+        }
+
+        /* Gallery overlay on hover */
+        .gallery-item {
+            position: relative;
+        }
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(43, 22, 27, 0.6) 0%, transparent 50%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+
+        /* Red accent section (testimonials gets a subtle red-tinted bg) */
+        .testimonials {
+            background: linear-gradient(135deg, #fff 0%, #fdf5f5 100%);
+        }
+
+        /* Pulsing CTA button */
+        @keyframes subtlePulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(239, 77, 72, 0.4); }
+            50% { box-shadow: 0 0 0 10px rgba(239, 77, 72, 0); }
+        }
+        .btn-primary {
+            animation: subtlePulse 3s ease-in-out infinite;
+        }
+        .btn-primary:hover {
+            animation: none;
+            box-shadow: 0 6px 20px rgba(239, 77, 72, 0.35);
+            transform: translateY(-2px);
+        }
+
+        /* Quick info strip — bolder with red accent background */
+        .quick-info {
+            background: #2B161B;
+            border: none;
+        }
+        .quick-info-item {
+            color: #fff;
+        }
+        .quick-info-icon {
+            color: #EF4D48;
+        }
+        .quick-info-item .gold-text { color: #D4A853; }
+
+        /* About quote decorative background */
+        .about-quote {
+            background: #fff;
+            border: 2px solid #2B161B;
+            border-radius: 16px;
+            padding: 48px 40px 40px;
+            position: relative;
+        }
+        .about-quote::before {
+            content: 'deVita';
+            position: absolute;
+            top: -16px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #F7F3F5;
+            padding: 0 20px;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #EF4D48;
+            letter-spacing: 1px;
+        }
+        .about-quote blockquote::before {
+            content: none;
+        }
+
+        /* Accordion items — subtle left border on open */
+        .accordion-toggle:checked ~ .accordion-label {
+            color: #EF4D48;
+        }
+        .accordion-toggle:checked ~ .accordion-content {
+            border-left: 3px solid #EF4D48;
+            padding-left: 20px;
+        }
+
+        /* Menu item hover highlight */
+        .menu-item {
+            padding: 14px 12px;
+            border-radius: 6px;
+            transition: background 0.2s ease;
+        }
+        .menu-item:hover {
+            background: rgba(239, 77, 72, 0.04);
+        }
+
+        /* Star rating shimmer */
+        @keyframes shimmer {
+            0% { background-position: -200px 0; }
+            100% { background-position: 200px 0; }
+        }
+        .rating-badge-score {
+            background: linear-gradient(90deg, #D4A853 0%, #f0d890 50%, #D4A853 100%);
+            background-size: 200px 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 3s linear infinite;
+        }
+
+        /* Contact section map glow */
+        .contact-map {
+            transition: box-shadow 0.3s ease;
+        }
+        .contact-map:hover {
+            box-shadow: 0 8px 30px rgba(239, 77, 72, 0.15);
+        }
+
+        /* Smooth section transitions with alternating subtle backgrounds */
+        .menu {
+            border-top: 1px solid rgba(43, 22, 27, 0.08);
+        }
+    </style>
+
+    <!-- JSON-LD: Restaurant Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": ["Restaurant", "ItalianRestaurant"],
+        "@id": "https://devita.net.au/#restaurant",
+        "name": "DeVita — Tastes of Napoli",
+        "alternateName": "DeVita Manly",
+        "description": "DeVita is an authentic Neapolitan pizzeria and trattoria located at 4-8 Darley Road in Manly, Sydney, serving wood-fired pizza and traditional Italian cuisine since 2013. Their pizza oven was built in Naples and shipped brick by brick to Australia, made with ancient Sorrento stones from the Amalfi coast.",
+        "url": "https://devita.net.au/",
+        "telephone": "+61481363791",
+        "email": "info@devita.net.au",
+        "image": [
+            "https://devita.net.au/images/pizza-napoli.jpg",
+            "https://devita.net.au/images/interior-1.jpg",
+            "https://devita.net.au/images/gallery-1.jpg",
+            "https://devita.net.au/images/gallery-7.jpg"
+        ],
+        "logo": "https://devita.net.au/images/logo.png",
+        "founder": {
+            "@type": "Person",
+            "name": "Salvatore Leva",
+            "jobTitle": "Owner & Founder"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Shop 1B, 4-8 Darley Road",
+            "addressLocality": "Manly",
+            "addressRegion": "NSW",
+            "postalCode": "2095",
+            "addressCountry": "AU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -33.7969,
+            "longitude": 151.2875
+        },
+        "openingHoursSpecification": [
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "17:00", "closes": "22:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "17:00", "closes": "22:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "17:00", "closes": "22:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "17:00", "closes": "22:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "12:00", "closes": "23:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "23:00" },
+            { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "22:00" }
+        ],
+        "servesCuisine": ["Italian", "Neapolitan", "Pizza", "Pasta"],
+        "priceRange": "$$",
+        "foundingDate": "2013",
+        "acceptsReservations": true,
+        "paymentAccepted": "Cash, Credit Card, Debit Card",
+        "currenciesAccepted": "AUD",
+        "areaServed": {
+            "@type": "City",
+            "name": "Manly",
+            "containedInPlace": {
+                "@type": "State",
+                "name": "New South Wales"
+            }
+        },
+        "sameAs": [
+            "https://www.instagram.com/devitamanly/",
+            "https://www.facebook.com/devitamanly/",
+            "https://www.tripadvisor.com/Restaurant_Review-g552103-d4014990-Reviews-DeVita_Trattoria_Pizzeria-Manly_Greater_Sydney_New_South_Wales.html",
+            "https://goo.gl/maps/HEsWTgaqzH6nDYu39"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.4",
+            "bestRating": "5",
+            "ratingCount": "1015",
+            "reviewCount": "1015"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "Flora E"},
+                "datePublished": "2025-01",
+                "reviewBody": "The absolute best pasta I have had. And the kids pizza was delish too. All main meals were a 6/5.",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+            },
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "Aussienando"},
+                "datePublished": "2022-07",
+                "reviewBody": "The pizzas are incredible. Lots of topping and on a thin wood fired crust - the best pizzas on the Northern Beaches.",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+            },
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": "Georgia R"},
+                "datePublished": "2023-03",
+                "reviewBody": "Staff were all extremely friendly and warm. Both pizzas we ate were delicious, very authentic and gorgeous dough!",
+                "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+            }
+        ],
+        "hasMenu": {
+            "@type": "Menu",
+            "name": "DeVita Main Menu",
+            "url": "https://devita.net.au/#menu",
+            "hasMenuSection": [
+                {
+                    "@type": "MenuSection",
+                    "name": "Antipasti / Starters",
+                    "hasMenuItem": [
+                        { "@type": "MenuItem", "name": "Neapolitan Meatballs", "description": "Traditional meatballs with beef and pork, napoletana sauce, Parmesan fondue, basil, carasau bread", "offers": { "@type": "Offer", "price": "16.00", "priceCurrency": "AUD" } },
+                        { "@type": "MenuItem", "name": "Burrata", "description": "Split it open and watch the cream spill — pillowy burrata on golden pumpkin puree with toasted breadcrumbs and semidried tomatoes", "offers": { "@type": "Offer", "price": "29.00", "priceCurrency": "AUD" } },
+                        { "@type": "MenuItem", "name": "Calamari Fritti", "description": "Light, shatteringly crisp calamari with our house-made garlic aioli", "offers": { "@type": "Offer", "price": "26.00", "priceCurrency": "AUD" } }
+                    ]
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Pizze Classiche",
+                    "hasMenuItem": [
+                        { "@type": "MenuItem", "name": "Margherita", "description": "Tomato base, fior di latte cheese, basil and olive oil", "offers": { "@type": "Offer", "price": "26.00", "priceCurrency": "AUD" } },
+                        { "@type": "MenuItem", "name": "Diavola", "description": "Tomato base, fior di latte cheese, spicy salame, olive oil and basil", "offers": { "@type": "Offer", "price": "29.00", "priceCurrency": "AUD" } },
+                        { "@type": "MenuItem", "name": "Regina", "description": "Cherry tomatoes, fior di latte cheese, prosciutto di Parma, rocket, Parmesan cheese, olive oil and basil", "offers": { "@type": "Offer", "price": "32.00", "priceCurrency": "AUD" } },
+                        { "@type": "MenuItem", "name": "Capricciosa", "description": "Tomato base, fior di latte cheese, ham, salame, mushrooms, artichokes, basil and olives", "offers": { "@type": "Offer", "price": "30.00", "priceCurrency": "AUD" } }
+                    ]
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Pizze Gourmet",
+                    "hasMenuItem": [
+                        { "@type": "MenuItem", "name": "Piccante", "description": "Mortadella, buffalo mozzarella, pistachio pesto, nduja", "offers": { "@type": "Offer", "price": "36.00", "priceCurrency": "AUD" } },
+                        { "@type": "MenuItem", "name": "Rustica", "description": "Italian sausage, burrata, pumpkin and Parmesan fondue, almond crumble, basil", "offers": { "@type": "Offer", "price": "36.00", "priceCurrency": "AUD" } },
+                        { "@type": "MenuItem", "name": "Fresca", "description": "Wagyu bresaola, buffalo stracciatella, semidried tomatoes, rocket", "offers": { "@type": "Offer", "price": "36.00", "priceCurrency": "AUD" } }
+                    ]
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Pasta & Mains",
+                    "hasMenuItem": [
+                        { "@type": "MenuItem", "name": "Lasagna", "description": "Layer by layer with besciamella, fior di latte cheese, bolognese sauce, Parmesan cheese, basil", "offers": { "@type": "Offer", "price": "32.00", "priceCurrency": "AUD" } },
+                        { "@type": "MenuItem", "name": "Rigatoni alla Genovese", "description": "Pasta with slow cooked beef and pork, onions, Parmesan cheese, basil", "offers": { "@type": "Offer", "price": "34.00", "priceCurrency": "AUD" } },
+                        { "@type": "MenuItem", "name": "Risotto alla Pescatora", "description": "Fisherman-style with mussels, clams, prawns, calamari", "offers": { "@type": "Offer", "price": "40.00", "priceCurrency": "AUD" } }
+                    ]
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Desserts",
+                    "hasMenuItem": [
+                        { "@type": "MenuItem", "name": "Tiramisu", "offers": { "@type": "Offer", "price": "16.00", "priceCurrency": "AUD" } },
+                        { "@type": "MenuItem", "name": "Scugnizzi Nutella", "description": "Pillows of deep-fried pizza dough, rolled in sugar, dunked in warm Nutella — do not try to share", "offers": { "@type": "Offer", "price": "19.00", "priceCurrency": "AUD" } }
+                    ]
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Insalate / Salads",
+                    "hasMenuItem": [
+                        {"@type": "MenuItem", "name": "Garden Salad", "offers": {"@type": "Offer", "price": "16.00", "priceCurrency": "AUD"}},
+                        {"@type": "MenuItem", "name": "Rucola & Pere", "offers": {"@type": "Offer", "price": "18.00", "priceCurrency": "AUD"}},
+                        {"@type": "MenuItem", "name": "Chicken Salad", "offers": {"@type": "Offer", "price": "22.00", "priceCurrency": "AUD"}},
+                        {"@type": "MenuItem", "name": "Wagyu Bresaola Salad", "offers": {"@type": "Offer", "price": "30.00", "priceCurrency": "AUD"}}
+                    ]
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Pizze Thank You Australia",
+                    "hasMenuItem": [
+                        {"@type": "MenuItem", "name": "Hawaiian", "offers": {"@type": "Offer", "price": "28.00", "priceCurrency": "AUD"}},
+                        {"@type": "MenuItem", "name": "Meatlovers", "offers": {"@type": "Offer", "price": "34.00", "priceCurrency": "AUD"}},
+                        {"@type": "MenuItem", "name": "Chicken Pizza", "offers": {"@type": "Offer", "price": "30.00", "priceCurrency": "AUD"}},
+                        {"@type": "MenuItem", "name": "Ozy Chef", "offers": {"@type": "Offer", "price": "28.00", "priceCurrency": "AUD"}}
+                    ]
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Sides",
+                    "hasMenuItem": [
+                        {"@type": "MenuItem", "name": "Fresh-Cut Triple Fried Potatoes", "offers": {"@type": "Offer", "price": "10.00", "priceCurrency": "AUD"}},
+                        {"@type": "MenuItem", "name": "Friarielli", "offers": {"@type": "Offer", "price": "11.00", "priceCurrency": "AUD"}},
+                        {"@type": "MenuItem", "name": "Garlic Buttered Broccoli", "offers": {"@type": "Offer", "price": "14.00", "priceCurrency": "AUD"}},
+                        {"@type": "MenuItem", "name": "Mixed Vegetables", "offers": {"@type": "Offer", "price": "13.00", "priceCurrency": "AUD"}}
+                    ]
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Kids Menu",
+                    "hasMenuItem": [
+                        {"@type": "MenuItem", "name": "Chips", "offers": {"@type": "Offer", "price": "8.00", "priceCurrency": "AUD"}},
+                        {"@type": "MenuItem", "name": "Cotoletta e Patatine", "offers": {"@type": "Offer", "price": "14.00", "priceCurrency": "AUD"}},
+                        {"@type": "MenuItem", "name": "Spaghetti alla Bolognese", "offers": {"@type": "Offer", "price": "16.00", "priceCurrency": "AUD"}},
+                        {"@type": "MenuItem", "name": "Pizza Mickey Mouse", "offers": {"@type": "Offer", "price": "14.00", "priceCurrency": "AUD"}},
+                        {"@type": "MenuItem", "name": "Italian Gelato", "offers": {"@type": "Offer", "price": "5.00", "priceCurrency": "AUD"}}
+                    ]
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Set Menus",
+                    "hasMenuItem": [
+                        {"@type": "MenuItem", "name": "Set Menu Pizza", "description": "Starters + unlimited pizza + dessert", "offers": {"@type": "Offer", "price": "60.00", "priceCurrency": "AUD"}},
+                        {"@type": "MenuItem", "name": "Set Menu Mains", "description": "Starters + main + dessert", "offers": {"@type": "Offer", "price": "80.00", "priceCurrency": "AUD"}},
+                        {"@type": "MenuItem", "name": "Kids Set Menu", "description": "Fries + main + gelato", "offers": {"@type": "Offer", "price": "20.00", "priceCurrency": "AUD"}}
+                    ]
+                }
+            ]
+        }
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Where is DeVita located in Manly?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "DeVita is located at Shop 1B, 4-8 Darley Road, Manly NSW 2095, Australia. It is a short walk from Manly Wharf and Manly Beach, on the corner of Darley Road and Wentworth Street."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are DeVita's opening hours?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "DeVita's winter hours are Monday to Thursday 5pm-10pm, Friday and Saturday 12pm-11pm, and Sunday 12pm-10pm. The kitchen closes at 9:45pm."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does DeVita take reservations?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, DeVita accepts reservations. Customers can book online through ResoDiary or call 0481 363 791."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is DeVita BYO?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, DeVita is BYO wine only with a $7 per person corkage fee. They also offer a full wine list, craft beers, and cocktails."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does DeVita have gluten-free options?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, DeVita offers a homemade gluten-free pizza base for an additional $5, available in round size only. They cannot guarantee 100% gluten-free as all pizzas are prepared in the same environment."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does DeVita have vegan options?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, DeVita offers vegan cheese for an additional $3 on any pizza. Several menu items are also available as vegan or vegetarian."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is DeVita's pizza oven made from?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "DeVita's pizza oven was built in Naples and shipped brick by brick to Manly. It is made with ancient Sorrento stones from the Amalfi coast."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What size pizzas does DeVita offer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "DeVita offers three pizza sizes: round (individual), half-metre (feeds 2-3 people), and full one-metre (feeds 4-6 people). Half-metre and one-metre sizes are perfect for sharing with family and friends."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does DeVita offer takeaway?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, DeVita offers takeaway. Customers can also order delivery through Uber Eats."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is there parking near DeVita Manly?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Street parking is available on Darley Road and surrounding streets. The Whistler Street car park is a 3-minute walk from DeVita. Manly Wharf ferry terminal is also nearby."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does DeVita cater for large groups?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, DeVita offers set menus for large groups. The Pizza Set is $60 per person with unlimited pizza, and the Mains Set is $80 per person. A kids set menu is available for $20 per child. These are ideal for birthdays, work functions, and celebrations."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What makes DeVita's pizza dough special?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "DeVita uses an Italian pre-fermentation technique called biga with additive-free, all-natural flours. The dough is prepared two days in advance for perfect leavening, resulting in a lighter, more aromatic, and more digestible pizza."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the best dishes at DeVita Manly?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Customer favourites at DeVita include the Margherita pizza (classic Neapolitan), the Piccante pizza (mortadella, buffalo mozzarella, pistachio pesto, nduja), the Burrata starter, the Lasagna, and the Tiramisu. With over 1,000 Google reviews averaging 4.4 stars, everything on the menu is highly rated."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does DeVita deliver?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, DeVita delivers through Uber Eats. Customers can also order takeaway for pickup from the restaurant at Shop 1B, 4-8 Darley Road, Manly NSW 2095."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much is pizza at DeVita?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pizza at DeVita starts from $26 for a classic Margherita. Gourmet pizzas range from $30 to $36. Half-metre pizzas start from $52 and feed 2-3 people. Full one-metre pizzas start from $104 and feed 4-6 people. Gluten-free base is available for an additional $5, and vegan cheese for $3 extra."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is DeVita family-friendly?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, DeVita is family-friendly with a dedicated kids menu featuring pizza, pasta, chicken schnitzel, and gelato priced from $5 to $16. A kids set menu is available for $20 per child including fries, a main course, and dessert. High chairs are available."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- JSON-LD: BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://devita.net.au/"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+        <div class="container">
+            <a href="#" class="navbar-logo" aria-label="DeVita home">
+                <img src="images/logo.png" alt="DeVita Tastes of Napoli logo - Neapolitan restaurant in Manly Sydney" width="140" height="50">
+            </a>
+
+            <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle" aria-hidden="true">
+            <label for="hamburger-toggle" class="hamburger-label" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+                <a href="tel:0481363791" class="nav-phone">Call 0481 363 791</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" aria-label="Hero banner">
+        <div class="hero-content">
+            <h1>A True Taste of <span>Naples</span> in Manly</h1>
+            <p>Our wood-fired oven was built in Naples from ancient Amalfi coast stone and shipped brick by brick to Darley Road. The dough rests for two days. The flames do the rest. This is what thirteen years of obsession tastes like.</p>
+            <div class="hero-buttons">
+                <a href="https://www.resodiary.com/" class="btn btn-primary" target="_blank" rel="noopener">Book a Table</a>
+                <a href="#menu" class="btn btn-secondary">View Our Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Italian Flag Stripe -->
+    <div class="italian-stripe"></div>
+
+    <!-- ========== QUICK INFO STRIP ========== -->
+    <section class="quick-info" aria-label="Quick information">
+        <div class="container">
+            <div class="quick-info-item">
+                <span class="quick-info-icon">&#128339;</span>
+                <span>Open Tonight: <time datetime="17:00">5pm</time>&ndash;<time datetime="22:00">10pm</time></span>
+            </div>
+            <div class="quick-info-item">
+                <span class="quick-info-icon">&#127863;</span>
+                <span>BYO Wine &mdash; $7/person</span>
+            </div>
+            <div class="quick-info-item">
+                <span class="quick-info-icon">&#128222;</span>
+                <a href="tel:0481363791" style="color:#F5F0EB;">0481 363 791</a>
+            </div>
+            <div class="quick-info-item">
+                <span class="quick-info-icon">&#11088;</span>
+                <span class="gold-text">4.4&#9733; on Google (1,015 reviews)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about section-padding" id="about" aria-label="About DeVita">
+        <div class="container">
+            <h2 class="section-title reveal">Our Story — Neapolitan Soul in Manly Since 2013</h2>
+            <p class="section-subtitle">From a dream in Naples to your favourite table on Darley Road</p>
+
+            <div class="about-quote reveal">
+                <blockquote>
+                    Simplicity is the key. You don't need many ingredients to make a tasty dish &mdash; you need them to be genuine, fresh, and treat them gently.
+                </blockquote>
+<cite style="display:block; text-align:center; margin-top:16px; font-family:'Playfair Display',serif; font-size:1rem; color:#453E3E; font-style:normal;">— <strong>Salvatore Leva</strong>, Founder</cite>
+            </div>
+
+            <p class="about-definition">Walk through our door on Darley Road and you'll smell it before you see it — the wood smoke curling from a Neapolitan oven, the char on a Margherita just pulled from 450-degree stone, the quiet sound of dough being stretched by hands that have done it ten thousand times. DeVita is Manly's home of authentic Neapolitan pizza and Italian cuisine, serving Sydney's Northern Beaches since 2013.</p>
+
+            <div class="about-row reveal">
+                <div class="about-text">
+                    <h3>From Naples to Manly</h3>
+                    <p>When Salvatore Leva dreamed of bringing true Neapolitan pizza to Sydney's Northern Beaches, he didn't cut corners. Our pizza oven was built in Naples and shipped brick by brick to Manly, constructed with ancient "Sorrento stones" from the Amalfi coast. It's the same stone that has fired the greatest pizzas in the world for centuries.</p>
+                    <p>We use an Italian pre-fermentation technique called <em>biga</em>, preparing our dough two full days before it ever meets the flames. With additive-free, all-natural flours, every base comes out lighter, more aromatic, and beautifully digestible. It's the kind of crust you can feel good about eating &mdash; and you'll want seconds.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/interior-1.jpg" loading="lazy" alt="Fresh Margherita pizza being served at DeVita restaurant in Manly, Sydney" width="600" height="400">
+                </div>
+            </div>
+
+            <div class="about-row reverse reveal">
+                <div class="about-text">
+                    <h3>More Than Pizza</h3>
+                    <p>We're a trattoria at heart. Beyond our wood-fired pizzas, our kitchen turns out slow-cooked Rigatoni alla Genovese, silky house-made gnocchi, and show-stopping seafood like our Risotto alla Pescatora. Our antipasto board is the perfect way to start &mdash; prosciutto di Parma, wagyu bresaola, Italian cheeses, all served with jams and honey.</p>
+                    <p>BYO wine is welcome (just $7 corkage per person), or choose from our curated wine list, craft beers, and cocktails. Whether it's a family feast with our one-metre pizza, a romantic dinner for two, or a big birthday celebration with our set menu &mdash; we'll make it feel like home. Manly's been trusting us with their special nights for over thirteen years now, and we wouldn't have it any other way.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/gallery-7.jpg" loading="lazy" alt="Italian antipasto board with prosciutto, salame, and cheeses at DeVita Manly" width="600" height="400">
+                </div>
+            </div>
+<p style="text-align:center; color:#453E3E; max-width:700px; margin:40px auto 0; font-size:0.95rem; line-height:1.8;">Looking for gluten-free pizza in Manly? We offer a homemade gluten-free base on any pizza. Vegan cheese is also available. Whether you need a family-friendly Italian restaurant in Manly, a BYO dinner spot on the Northern Beaches, or authentic Italian takeaway near Manly Beach — DeVita has you covered.</p>
+        </div>
+    </section>
+
+    <!-- ========== MENU ========== -->
+    <section class="menu section-padding" id="menu" aria-label="Menu">
+        <div class="container">
+            <h2 class="section-title reveal">The Menu — Wood-Fired Pizza &amp; Italian Classics</h2>
+            <p class="section-subtitle">From a 450-degree oven to six-hour ragùs</p>
+            <p class="menu-intro">Salvatore's menu changes with the seasons, but the philosophy never does: the best ingredients, prepared simply, fired in an oven shipped from Naples. Here's what's on the table right now.</p>
+
+            <div class="accordion">
+
+                <!-- ANTIPASTI -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="acc-antipasti" class="accordion-toggle">
+                    <label for="acc-antipasti" class="accordion-label">Antipasti / Starters</label>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Neapolitan Meatballs (3pcs)</div>
+                                    <div class="menu-item-desc">Traditional meatballs with beef and pork, napoletana sauce, Parmesan fondue, basil, carasau bread</div>
+                                </div>
+                                <div class="menu-item-price">$16</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Neapolitan Crocche' (3pcs)</div>
+                                    <div class="menu-item-desc">Mashed potato rolls, crumbed and fried, stuffed with smoked provola cheese, prosciutto di Parma, Parmesan</div>
+                                </div>
+                                <div class="menu-item-price">$15</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Garlic Pizza Crust</div>
+                                    <div class="menu-item-desc">Olive oil and garlic</div>
+                                </div>
+                                <div class="menu-item-price">$16</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Bruschette</div>
+                                    <div class="menu-item-desc">Toasted bread with mixed cherry tomatoes, garlic and basil</div>
+                                </div>
+                                <div class="menu-item-price">$18</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Scugnizzi</div>
+                                    <div class="menu-item-desc">Deep-fried pizza dough fingers with cherry tomatoes, olive oil, oregano, garlic, basil and shaved Parmesan</div>
+                                </div>
+                                <div class="menu-item-price">$20</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Prosciutto e Mozzarella</div>
+                                    <div class="menu-item-desc">Buffalo mozzarella and Prosciutto di Parma</div>
+                                </div>
+                                <div class="menu-item-price">$30</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Calamari Fritti</div>
+                                    <div class="menu-item-desc">Light, shatteringly crisp calamari with our house-made garlic aioli</div>
+                                </div>
+                                <div class="menu-item-price">$26</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Bread</div>
+                                    <div class="menu-item-desc">4 fresh slices of Italian bread served with extra-virgin olive oil</div>
+                                </div>
+                                <div class="menu-item-price">$10</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Burrata</div>
+                                    <div class="menu-item-desc">Split it open and watch the cream spill — pillowy burrata on golden pumpkin puree with toasted breadcrumbs and semidried tomatoes</div>
+                                </div>
+                                <div class="menu-item-price">$29</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Caprese</div>
+                                    <div class="menu-item-desc">Sliced buffalo mozzarella, tomatoes, basil and oregano</div>
+                                </div>
+                                <div class="menu-item-price">$25</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Antipasto all'Italiana</div>
+                                    <div class="menu-item-desc">Prosciutto di Parma, mortadella, mild and spicy salame, wagyu bresaola, mixed Italian cheeses served with jams and honey</div>
+                                </div>
+                                <div class="menu-item-price">$30</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INSALATE -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="acc-insalate" class="accordion-toggle">
+                    <label for="acc-insalate" class="accordion-label">Insalate / Salads</label>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Garden Salad</div>
+                                    <div class="menu-item-desc">Lettuce, tomatoes, onions, cucumber, carrots, olives, balsamic vinegar and extra-virgin olive oil</div>
+                                </div>
+                                <div class="menu-item-price">$16</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Rucola &amp; Pere</div>
+                                    <div class="menu-item-desc">Rocket, fresh pears, walnuts, mixed cherry tomatoes, extra-virgin olive oil, balsamic dressing</div>
+                                </div>
+                                <div class="menu-item-price">$18</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Chicken Salad</div>
+                                    <div class="menu-item-desc">Mixed salad, chicken breast, semidried tomatoes, olives, shaved Parmesan</div>
+                                </div>
+                                <div class="menu-item-price">$22</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Wagyu Bresaola Salad</div>
+                                    <div class="menu-item-desc">Wagyu bresaola, rocket, shaved Parmesan, lemon, extra-virgin olive oil</div>
+                                </div>
+                                <div class="menu-item-price">$30</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PIZZE CLASSICHE -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="acc-classiche" class="accordion-toggle">
+                    <label for="acc-classiche" class="accordion-label">Pizze Classiche</label>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="menu-size-note">Available in round, half-metre, and 1-metre sizes</p>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Margherita</div>
+                                    <div class="menu-item-desc">Tomato base, fior di latte cheese, basil and olive oil</div>
+                                </div>
+                                <div class="menu-item-price">$26 / $52 / $104</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Capricciosa</div>
+                                    <div class="menu-item-desc">Tomato base, fior di latte cheese, ham, salame, mushrooms, artichokes, basil and olives</div>
+                                </div>
+                                <div class="menu-item-price">$30 / $60 / $120</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Diavola</div>
+                                    <div class="menu-item-desc">Tomato base, fior di latte cheese, spicy salame, olive oil and basil</div>
+                                </div>
+                                <div class="menu-item-price">$29 / $58 / $116</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Pizza Lasagna</div>
+                                    <div class="menu-item-desc">Tomato base, fior di latte cheese, ricotta cheese, ham, salame, black pepper, olive oil and basil</div>
+                                </div>
+                                <div class="menu-item-price">$29 / $58 / $116</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Ortolana</div>
+                                    <div class="menu-item-desc">Tomato base, eggplants, zucchini, capsicums, mushrooms, fior di latte cheese, olive oil and basil</div>
+                                </div>
+                                <div class="menu-item-price">$30 / $60 / $120</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Calzone</div>
+                                    <div class="menu-item-desc">Folded pizza with fior di latte cheese, ricotta cheese, ham, salame, tomato base, black pepper, olive oil and basil</div>
+                                </div>
+                                <div class="menu-item-price">$32 / $64 / $128</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Quattro Formaggi</div>
+                                    <div class="menu-item-desc">Swiss cheese, gorgonzola, Parmesan, fior di latte, olive oil and basil</div>
+                                </div>
+                                <div class="menu-item-price">$30 / $60 / $120</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Salsicce &amp; Friarielli</div>
+                                    <div class="menu-item-desc">Italian sausage, fior di latte cheese, friarielli (Neapolitan broccoli), basil and olive oil</div>
+                                </div>
+                                <div class="menu-item-price">$29 / $58 / $116</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Regina</div>
+                                    <div class="menu-item-desc">Cherry tomatoes, fior di latte cheese, prosciutto di Parma, rocket, Parmesan cheese, olive oil and basil</div>
+                                </div>
+                                <div class="menu-item-price">$32 / $64 / $128</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Porcini</div>
+                                    <div class="menu-item-desc">Porcini mushrooms, Italian sausage, fior di latte cheese, truffle sauce, olive oil and basil</div>
+                                </div>
+                                <div class="menu-item-price">$32 / $64 / $128</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Marechiaro</div>
+                                    <div class="menu-item-desc">Prawns, tomato base, fior di latte cheese, cherry tomatoes, garlic, olive oil and rocket</div>
+                                </div>
+                                <div class="menu-item-price">$32 / $64 / $128</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Pizza Fritta</div>
+                                    <div class="menu-item-desc">Deep fried pizza: ricotta cheese, ham, salame, fior di latte cheese, tomato base and black pepper</div>
+                                </div>
+                                <div class="menu-item-price">$33</div>
+                            </div>
+                            <div class="menu-note">Gluten-free base +$5 (round only) &bull; Vegan cheese +$3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PIZZE THANK YOU AUSTRALIA -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="acc-thankyou" class="accordion-toggle">
+                    <label for="acc-thankyou" class="accordion-label">Pizze "Thank You Australia"</label>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="menu-size-note">Available in round, half-metre, and 1-metre sizes</p>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Hawaiian</div>
+                                    <div class="menu-item-desc">A touch of tomato base, fior di latte cheese, ham, pineapple</div>
+                                </div>
+                                <div class="menu-item-price">$28 / $56 / $112</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Meatlovers</div>
+                                    <div class="menu-item-desc">Tomato base, fior di latte cheese, ham, Italian sausage, pork belly, salame, nduja, basil</div>
+                                </div>
+                                <div class="menu-item-price">$34 / $68 / $136</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Chicken Pizza</div>
+                                    <div class="menu-item-desc">Fior di latte cheese, chicken, tomato sauce, garlic, basil</div>
+                                </div>
+                                <div class="menu-item-price">$30 / $60 / $120</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Ozy Chef</div>
+                                    <div class="menu-item-desc">Fior di latte cheese, ham, mushrooms, cream, basil</div>
+                                </div>
+                                <div class="menu-item-price">$28 / $56 / $112</div>
+                            </div>
+                            <div class="menu-note">Gluten-free base +$5 (round only) &bull; Vegan cheese +$3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PIZZE GOURMET -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="acc-gourmet" class="accordion-toggle">
+                    <label for="acc-gourmet" class="accordion-label">Pizze Gourmet</label>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p class="menu-size-note">Round only</p>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Povera</div>
+                                    <div class="menu-item-desc">Tomato base, garlic, anchovies, semidried cherry tomatoes, olives, oregano</div>
+                                </div>
+                                <div class="menu-item-price">$30</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Crocche' Pizza</div>
+                                    <div class="menu-item-desc">Ham, fior di latte cheese, cream, neapolitan crocche', basil</div>
+                                </div>
+                                <div class="menu-item-price">$32</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Fiocco</div>
+                                    <div class="menu-item-desc">Smoked provola cheese, pork belly, fresh-cut triple fried potatoes, Parmesan fondue</div>
+                                </div>
+                                <div class="menu-item-price">$34</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Genovese</div>
+                                    <div class="menu-item-desc">Slow cooked beef and pork, onions, fior di latte cheese, Parmesan cheese, basil and black pepper</div>
+                                </div>
+                                <div class="menu-item-price">$35</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Fresca</div>
+                                    <div class="menu-item-desc">Wagyu bresaola, buffalo stracciatella, semidried tomatoes, rocket</div>
+                                </div>
+                                <div class="menu-item-price">$36</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Piccante</div>
+                                    <div class="menu-item-desc">Mortadella, buffalo mozzarella, pistachio pesto, nduja</div>
+                                </div>
+                                <div class="menu-item-price">$36</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Rustica</div>
+                                    <div class="menu-item-desc">Italian sausage, burrata, pumpkin and Parmesan fondue, almond crumble, basil</div>
+                                </div>
+                                <div class="menu-item-price">$36</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Meatball Pizza</div>
+                                    <div class="menu-item-desc">Tomato base, neapolitan meatballs, smoked provola cheese, Parmesan fondue, basil</div>
+                                </div>
+                                <div class="menu-item-price">$32</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Salsiccia e Patate</div>
+                                    <div class="menu-item-desc">Italian sausage, smoked provola cheese, fresh-cut triple fried potatoes, rosemary</div>
+                                </div>
+                                <div class="menu-item-price">$31</div>
+                            </div>
+                            <div class="menu-note">Gluten-free base +$5 (round only) &bull; Vegan cheese +$3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PASTA & MAINS -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="acc-pasta" class="accordion-toggle">
+                    <label for="acc-pasta" class="accordion-label">Pasta &amp; Mains</label>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Spaghetti alla Bolognese</div>
+                                    <div class="menu-item-desc">Slow-cooked beef and pork ragù with Parmesan and fresh basil</div>
+                                </div>
+                                <div class="menu-item-price">$30</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Rigatoni alla Genovese</div>
+                                    <div class="menu-item-desc">Pasta with slow cooked beef and pork, onions, Parmesan cheese, basil</div>
+                                </div>
+                                <div class="menu-item-price">$34</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Spaghetti alla Nerano</div>
+                                    <div class="menu-item-desc">Famous Sorrentine recipe: zucchini, provolone, Parmesan cheese, basil</div>
+                                </div>
+                                <div class="menu-item-price">$28</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Gnocchi alla Sorrentina</div>
+                                    <div class="menu-item-desc">Home-made gnocchi with napoletana sauce, smoked provola cheese, Parmesan cheese, basil</div>
+                                </div>
+                                <div class="menu-item-price">$29</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Gnocchi ai 4 Formaggi</div>
+                                    <div class="menu-item-desc">Home-made gnocchi with 4 cheeses, basil</div>
+                                </div>
+                                <div class="menu-item-price">$32</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Risotto (or Spaghetti) alla Pescatora</div>
+                                    <div class="menu-item-desc">"Fisherman-style" with mussels, clams, prawns, calamari</div>
+                                </div>
+                                <div class="menu-item-price">$40</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Penne Vodka e Gamberi</div>
+                                    <div class="menu-item-desc">Prawns, vodka, cream, napoletana sauce, onions, chilli</div>
+                                </div>
+                                <div class="menu-item-price">$34</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Penne alla Boscaiola</div>
+                                    <div class="menu-item-desc">Italian pancetta (pork belly), onions, mushrooms, cream, Parmesan cheese</div>
+                                </div>
+                                <div class="menu-item-price">$32</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Lamb Ragu Pappardelle</div>
+                                    <div class="menu-item-desc">Slow cooked lamb ragu</div>
+                                </div>
+                                <div class="menu-item-price">$34</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Lasagna</div>
+                                    <div class="menu-item-desc">Layer by layer with besciamella, fior di latte cheese, bolognese sauce, Parmesan cheese, basil</div>
+                                </div>
+                                <div class="menu-item-price">$32</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Scaloppina</div>
+                                    <div class="menu-item-desc">Veal in white wine or lemon sauce with roasted potatoes</div>
+                                </div>
+                                <div class="menu-item-price">$39</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Salmone al Cartoccio</div>
+                                    <div class="menu-item-desc">Atlantic salmon fillet citrus cooked in foil with buttered garlic broccoli and roasted potatoes</div>
+                                </div>
+                                <div class="menu-item-price">$39</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Neapolitan Brasato</div>
+                                    <div class="menu-item-desc">Slow cooked pork and beef, onions with friarielli (Neapolitan broccoli)</div>
+                                </div>
+                                <div class="menu-item-price">$38</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SIDES -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="acc-sides" class="accordion-toggle">
+                    <label for="acc-sides" class="accordion-label">Sides</label>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Fresh-Cut Triple Fried Potatoes</div>
+                                    <div class="menu-item-desc">Russet burbank potatoes with salt flakes and rosemary</div>
+                                </div>
+                                <div class="menu-item-price">$10</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Friarielli</div>
+                                    <div class="menu-item-desc">Traditional Neapolitan broccoli, sautéed</div>
+                                </div>
+                                <div class="menu-item-price">$11</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Garlic Buttered Broccoli</div>
+                                    <div class="menu-item-desc">Tender broccoli in garlic butter</div>
+                                </div>
+                                <div class="menu-item-price">$14</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Mixed Vegetables</div>
+                                    <div class="menu-item-desc">Seasonal mixed vegetables</div>
+                                </div>
+                                <div class="menu-item-price">$13</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KIDS MENU -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="acc-kids" class="accordion-toggle">
+                    <label for="acc-kids" class="accordion-label">Kids Menu</label>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Chips</div>
+                                    <div class="menu-item-desc">Golden crispy fries</div>
+                                </div>
+                                <div class="menu-item-price">$8</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Cotoletta e Patatine</div>
+                                    <div class="menu-item-desc">Chicken schnitzel with chips</div>
+                                </div>
+                                <div class="menu-item-price">$14</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Spaghetti alla Bolognese</div>
+                                    <div class="menu-item-desc">Slow-cooked beef and pork ragù with Parmesan and fresh basil</div>
+                                </div>
+                                <div class="menu-item-price">$16</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Pizza Mickey Mouse</div>
+                                    <div class="menu-item-desc">Margherita with ham and 2 olives</div>
+                                </div>
+                                <div class="menu-item-price">$14</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Italian Gelato</div>
+                                    <div class="menu-item-desc">Ask for today's flavours — always made fresh</div>
+                                </div>
+                                <div class="menu-item-price">$5</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESSERTS -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="acc-desserts" class="accordion-toggle">
+                    <label for="acc-desserts" class="accordion-label">Desserts</label>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Tiramisu</div>
+                                    <div class="menu-item-desc">Espresso-soaked savoiardi, mascarpone cream, Marsala, dusted with cocoa</div>
+                                </div>
+                                <div class="menu-item-price">$16</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Panna Cotta</div>
+                                    <div class="menu-item-desc">Vanilla, served with fresh fruit</div>
+                                </div>
+                                <div class="menu-item-price">$14</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Chocolate Cheesecake</div>
+                                    <div class="menu-item-desc">Traditional biscuit base with rich chocolate ganache top</div>
+                                </div>
+                                <div class="menu-item-price">$17</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Baked Ricotta Pie</div>
+                                    <div class="menu-item-desc">Shortbread base filled with a scrumptious mix of fresh ricotta</div>
+                                </div>
+                                <div class="menu-item-price">$17</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Affogato</div>
+                                    <div class="menu-item-desc">Vanilla gelato with hot espresso. Add Amaretto or Frangelico +$5</div>
+                                </div>
+                                <div class="menu-item-price">$12</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Sorbetto (Vegan)</div>
+                                    <div class="menu-item-desc">Lemon or mango</div>
+                                </div>
+                                <div class="menu-item-price">$12</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Scugnizzi Nutella</div>
+                                    <div class="menu-item-desc">Pillows of deep-fried pizza dough, rolled in sugar, dunked in warm Nutella — do not try to share</div>
+                                </div>
+                                <div class="menu-item-price">$19</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Italian Gelato</div>
+                                    <div class="menu-item-desc">Ask for today's flavours — always made fresh</div>
+                                </div>
+                                <div class="menu-item-price">$12</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SET MENUS -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="acc-setmenus" class="accordion-toggle">
+                    <label for="acc-setmenus" class="accordion-label">Set Menus</label>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Set Menu Pizza</div>
+                                    <div class="menu-item-desc">Starters (calamari, garlic crust, scugnizzi) + unlimited pizza + Scugnizzi Nutella dessert</div>
+                                </div>
+                                <div class="menu-item-price">$60/person</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Set Menu Mains</div>
+                                    <div class="menu-item-desc">Starters (caprese, garden salad, prosciutto e mozzarella) + main (Rigatoni alla Genovese or Scaloppina) + Scugnizzi Nutella dessert</div>
+                                </div>
+                                <div class="menu-item-price">$80/person</div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Kid's Set Menu</div>
+                                    <div class="menu-item-desc">Fries + choice of Pizza Mickey Mouse, Spaghetti Bolognese, or Cotoletta + gelato</div>
+                                </div>
+                                <div class="menu-item-price">$20/kid</div>
+                            </div>
+                            <div class="menu-note">Drinks not included. BYO wine $7/person.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALLERY ========== -->
+    <section class="gallery section-padding" id="gallery" aria-label="Photo gallery">
+        <div class="container">
+            <h2 class="section-title reveal">Straight From the Oven</h2>
+            <p class="section-subtitle">Wood smoke, char, and cheese that stretches to the ceiling</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <img src="images/gallery-1.jpg" loading="lazy" alt="Creamy burrata appetiser at DeVita Italian restaurant in Manly, Sydney" width="600" height="450">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/gallery-2.jpg" loading="lazy" alt="Piccante pizza with mortadella and pistachio pesto at DeVita Manly" width="600" height="450">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/gallery-3.jpg" loading="lazy" alt="Fresca pizza with wagyu bresaola and buffalo stracciatella at DeVita Manly" width="600" height="450">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/gallery-4.jpg" loading="lazy" alt="Rustica pizza with crocche at DeVita Neapolitan restaurant Manly" width="600" height="450">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/gallery-6.jpg" loading="lazy" alt="Homemade lasagna with besciamella at DeVita Italian restaurant Manly Sydney" width="600" height="450">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/gallery-8.jpg" loading="lazy" alt="Povera pizza with anchovies and semidried tomatoes at DeVita Manly" width="600" height="450">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/gallery-9.jpg" loading="lazy" alt="Rustica pizza with Italian sausage and burrata at DeVita Manly" width="600" height="450">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/gallery-10.jpg" loading="lazy" alt="Piccante pizza close-up with nduja at DeVita Manly Northern Beaches" width="600" height="450">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/interior-2.jpg" loading="lazy" alt="Tiramisu dessert at DeVita Italian restaurant Manly Sydney" width="600" height="450">
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="images/takeaway.jpg" loading="lazy" alt="DeVita branded takeaway pizza boxes in Manly NSW" width="600" height="450">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonials section-padding" id="reviews" aria-label="Customer reviews">
+        <div class="container">
+            <h2 class="section-title reveal">1,500+ Reviews. One Verdict.</h2>
+            <p class="section-subtitle">From Google to TripAdvisor, Manly keeps coming back — and they keep talking about it</p>
+
+            <div class="ratings-row">
+                <div class="rating-badge reveal">
+                    <div class="rating-badge-source">Google</div>
+                    <div class="rating-badge-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    <div class="rating-badge-score">4.4 / 5</div>
+                    <div class="rating-badge-count">1,015 reviews</div>
+                </div>
+                <div class="rating-badge reveal">
+                    <div class="rating-badge-source">Facebook</div>
+                    <div class="rating-badge-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    <div class="rating-badge-score">4.5 / 5</div>
+                    <div class="rating-badge-count">266 reviews</div>
+                </div>
+                <div class="rating-badge reveal">
+                    <div class="rating-badge-source">TripAdvisor</div>
+                    <div class="rating-badge-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    <div class="rating-badge-score">4.2 / 5</div>
+                    <div class="rating-badge-count">298 reviews</div>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+                <article class="review-card reveal">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote>The absolute best pasta I have had. And the kids pizza was delish too. All main meals were a 6/5.</blockquote>
+                    <div class="review-author">Flora E</div>
+                    <div class="review-source">TripAdvisor</div>
+                </article>
+                <article class="review-card reveal">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote>The pizzas are incredible. Lots of topping and on a thin wood fired crust &mdash; the best pizzas on the Northern Beaches.</blockquote>
+                    <div class="review-author">Aussienando</div>
+                    <div class="review-source">TripAdvisor</div>
+                </article>
+                <article class="review-card reveal">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote>Staff were all extremely friendly and warm. Both pizzas we ate were delicious, very authentic and gorgeous dough!</blockquote>
+                    <div class="review-author">Georgia R</div>
+                    <div class="review-source">TripAdvisor</div>
+                </article>
+                <article class="review-card reveal">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote>Delicious pizza. Excellent crust, authentic toppings. Very friendly, obliging service.</blockquote>
+                    <div class="review-author">Maree S</div>
+                    <div class="review-source">Quandoo</div>
+                </article>
+                <article class="review-card reveal">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote>Great atmosphere and great pizza! Staff was friendly and quick. Tastes like pizza in Italy.</blockquote>
+                    <div class="review-author">Maria S</div>
+                    <div class="review-source">Quandoo</div>
+                </article>
+                <article class="review-card reveal">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote>Food was amazing, traditional Italian. Great variety on menu. Great value, it's BYO.</blockquote>
+                    <div class="review-author">Leanne N</div>
+                    <div class="review-source">Quandoo</div>
+                </article>
+            </div>
+<div style="text-align:center; margin-top:50px;">
+    <a href="https://www.resodiary.com/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:1.1rem; padding:16px 40px;">Book Your Table Tonight</a>
+</div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq section-padding" id="faq" aria-label="Frequently asked questions">
+        <div class="container">
+            <h2 class="section-title reveal">Before You Visit</h2>
+            <p class="section-subtitle">Everything you need to know before your visit</p>
+
+            <div class="faq-list">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-1" class="faq-toggle">
+                    <label for="faq-1" class="faq-label">Where is DeVita located in Manly?</label>
+                    <div class="faq-answer">
+                        <p>We're at Shop 1B, 4-8 Darley Road, Manly NSW 2095. Just a short walk from Manly Wharf and Manly Beach, on the corner of Darley Road and Wentworth Street. You really can't miss us &mdash; follow the smell of the wood-fired oven!</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-2" class="faq-toggle">
+                    <label for="faq-2" class="faq-label">What are DeVita's opening hours?</label>
+                    <div class="faq-answer">
+                        <p>Our winter hours are <time datetime="17:00">Monday to Thursday 5pm</time>&ndash;<time datetime="22:00">10pm</time>, <time datetime="12:00">Friday and Saturday 12pm</time>&ndash;<time datetime="23:00">11pm</time>, and <time datetime="12:00">Sunday 12pm</time>&ndash;<time datetime="22:00">10pm</time>. Our kitchen closes at <time datetime="21:45">9:45pm</time> every night.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-3" class="faq-toggle">
+                    <label for="faq-3" class="faq-label">Does DeVita take reservations?</label>
+                    <div class="faq-answer">
+                        <p>Absolutely! You can book online through <a href="https://www.resodiary.com/" target="_blank" rel="noopener">ResoDiary</a> or give us a call on <a href="tel:0481363791">0481 363 791</a>. We always recommend booking, especially on weekends.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-4" class="faq-toggle">
+                    <label for="faq-4" class="faq-label">Is DeVita BYO?</label>
+                    <div class="faq-answer">
+                        <p>Yes! We're BYO wine only for $7 per person corkage. Grab a nice bottle from the shops and bring it along. We also have a full wine list, craft beers, and cocktails if you'd rather leave it to us.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-5" class="faq-toggle">
+                    <label for="faq-5" class="faq-label">Does DeVita have gluten-free options?</label>
+                    <div class="faq-answer">
+                        <p>Yes, any pizza can be ordered on our homemade gluten-free base for +$5 (round size only). Please note we can't guarantee 100% gluten-free as all our pizzas are prepared in the same kitchen environment.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-6" class="faq-toggle">
+                    <label for="faq-6" class="faq-label">Does DeVita have vegan options?</label>
+                    <div class="faq-answer">
+                        <p>Yes, any pizza can be ordered with vegan cheese for +$3. Several of our menu items are also naturally vegan or vegetarian &mdash; just ask our friendly staff for recommendations.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-7" class="faq-toggle">
+                    <label for="faq-7" class="faq-label">What is DeVita's pizza oven made from?</label>
+                    <div class="faq-answer">
+                        <p>Our oven was built in Naples and shipped brick by brick to Manly. It's made with ancient "Sorrento stones" from the Amalfi coast &mdash; the same stone that has been used to fire pizza in Naples for generations. It's a truly unique piece of Naples right here in Manly.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-8" class="faq-toggle">
+                    <label for="faq-8" class="faq-label">What size pizzas does DeVita offer?</label>
+                    <div class="faq-answer">
+                        <p>We serve three sizes: round (individual), half-metre (feeds 2-3 people), and our legendary full one-metre pizza (feeds 4-6). The big ones are perfect for sharing with family and friends &mdash; and they make for a cracking photo too.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 9 -->
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-9" class="faq-toggle">
+                    <label for="faq-9" class="faq-label">Does DeVita offer takeaway?</label>
+                    <div class="faq-answer">
+                        <p>Yes, takeaway is available! Pop in and pick up your order, or you can also get us delivered through Uber Eats if you'd rather stay on the couch.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 10 -->
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-10" class="faq-toggle">
+                    <label for="faq-10" class="faq-label">Is there parking near DeVita Manly?</label>
+                    <div class="faq-answer">
+                        <p>Street parking is available on Darley Road and surrounding streets. The Whistler Street car park is just a 3-minute walk. And if you're coming by ferry, Manly Wharf terminal is right around the corner.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 11 -->
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-11" class="faq-toggle">
+                    <label for="faq-11" class="faq-label">Does DeVita cater for large groups?</label>
+                    <div class="faq-answer">
+                        <p>We love a big celebration! We offer set menus perfect for groups: our Pizza Set ($60/person) comes with starters and unlimited pizza, and our Mains Set ($80/person) includes starters, a main course, and dessert. Kids set is $20/kid. Ideal for birthdays, work functions, and celebrations of any kind.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 12 -->
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-12" class="faq-toggle">
+                    <label for="faq-12" class="faq-label">What makes DeVita's pizza dough special?</label>
+                    <div class="faq-answer">
+                        <p>We use an Italian pre-fermentation technique called "biga" with additive-free, all-natural flours. Our dough is prepared two full days in advance for perfect leavening. The result? A lighter, more aromatic, and more digestible pizza that you can taste the difference in from the very first bite.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 13 -->
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-13" class="faq-toggle">
+                    <label for="faq-13" class="faq-label">What are the best dishes at DeVita Manly?</label>
+                    <div class="faq-answer">
+                        <p>Our guests can't get enough of the Margherita (the classic Neapolitan test), the Piccante (mortadella, buffalo mozzarella, pistachio pesto, nduja), our silky Burrata starter, the Lasagna, and our Tiramisu to finish. But honestly, with over 1,000 Google reviews averaging 4.4 stars, everything on the menu is a winner. Come hungry.</p>
+                    </div>
+                </div>
+
+<div class="faq-item">
+    <input type="checkbox" class="faq-toggle" id="faq-14">
+    <label class="faq-label" for="faq-14">Does DeVita deliver?</label>
+    <div class="faq-answer">
+        <p>Yes! We deliver through Uber Eats — just search for DeVita Manly. You can also order takeaway and pick up from our Darley Road location. Either way, our pizza travels beautifully in our branded boxes.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <input type="checkbox" class="faq-toggle" id="faq-15">
+    <label class="faq-label" for="faq-15">How much is pizza at DeVita?</label>
+    <div class="faq-answer">
+        <p>Our pizzas start from $26 for a classic Margherita. Gourmet pizzas range from $30–$36. We also do half-metre pizzas from $52 (feeds 2–3 people) and full one-metre pizzas from $104 (feeds 4–6). Gluten-free base is an extra $5, and vegan cheese is $3 extra.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <input type="checkbox" class="faq-toggle" id="faq-16">
+    <label class="faq-label" for="faq-16">Is DeVita family-friendly?</label>
+    <div class="faq-answer">
+        <p>Absolutely! We have a dedicated kids menu with pizza, pasta, schnitzel, and gelato from $5–$16. Our kids set menu is just $20 per child — fries, a main, and dessert. High chairs are available, and we're used to big family tables. Order the one-metre pizza and watch the kids' eyes light up.</p>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact section-padding" id="contact" aria-label="Contact information">
+        <div class="container">
+            <h2 class="section-title reveal">Find DeVita in Manly</h2>
+            <p class="section-subtitle">We're right in the heart of Manly &mdash; come say g'day</p>
+
+            <div class="contact-grid">
+                <!-- Column 1: Find Us -->
+                <div class="contact-col">
+                    <h3>Find Us</h3>
+                    <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.8!2d151.2875!3d-33.7969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12aa1d50f7fba1%3A0xb8b1d7a1e5d0f93d!2sDeVita%20-%20Tastes%20of%20Napoli!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="DeVita restaurant location on Google Maps in Manly Sydney"></iframe>
+                    <address>
+                        <strong>DeVita &mdash; Tastes of Napoli</strong><br>
+                        Shop 1B, 4-8 Darley Road<br>
+                        Manly NSW 2095, Australia
+                    </address>
+                    <p><a href="https://goo.gl/maps/HEsWTgaqzH6nDYu39" target="_blank" rel="noopener">Get Directions &rarr;</a></p>
+                </div>
+
+                <!-- Column 2: Opening Hours -->
+                <div class="contact-col">
+                    <h3>Opening Hours</h3>
+                    <table class="hours-table">
+                        <tr>
+                            <td>Monday</td>
+                            <td><time datetime="17:00">5pm</time> &ndash; <time datetime="22:00">10pm</time></td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td><time datetime="17:00">5pm</time> &ndash; <time datetime="22:00">10pm</time></td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td><time datetime="17:00">5pm</time> &ndash; <time datetime="22:00">10pm</time></td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td><time datetime="17:00">5pm</time> &ndash; <time datetime="22:00">10pm</time></td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td><time datetime="12:00">12pm</time> &ndash; <time datetime="23:00">11pm</time></td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td><time datetime="12:00">12pm</time> &ndash; <time datetime="23:00">11pm</time></td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td><time datetime="12:00">12pm</time> &ndash; <time datetime="22:00">10pm</time></td>
+                        </tr>
+                    </table>
+                    <p class="hours-note">Kitchen closes at <time datetime="21:45">9:45pm</time></p>
+                    <p class="hours-note">Sunday 10% surcharge<br>Public Holiday 15% surcharge</p>
+                </div>
+
+                <!-- Column 3: Get in Touch -->
+                <div class="contact-col">
+                    <h3>Get in Touch</h3>
+                    <p><strong>Phone:</strong> <a href="tel:0481363791">0481 363 791</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@devita.net.au">info@devita.net.au</a></p>
+
+                    <div class="contact-social">
+                        <a href="https://www.instagram.com/devitamanly/" target="_blank" rel="noopener" aria-label="DeVita on Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/devitamanly/" target="_blank" rel="noopener" aria-label="DeVita on Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                    </div>
+
+                    <a href="https://www.resodiary.com/" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top: 16px;">Book a Table</a>
+
+                    <p class="contact-landmarks">Located on Darley Road, a short walk from Manly Wharf and the Manly Ferry terminal. Steps from Manly Beach, Manly Corso, and the heart of Manly's dining precinct on Sydney's Northern Beaches.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <img src="images/logo.png" loading="lazy" alt="DeVita Tastes of Napoli logo" width="140" height="45">
+                    <p>Authentic Neapolitan pizza and Italian cuisine in the heart of Manly, Sydney. Wood-fired since 2013.</p>
+                    <address style="font-style: normal; color: #A89B8C; font-size: 0.9rem; margin-top: 8px;">
+                        Shop 1B, 4-8 Darley Road<br>
+                        Manly NSW 2095<br>
+                        <a href="tel:0481363791">0481 363 791</a>
+                    </address>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/devitamanly/" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/devitamanly/" target="_blank" rel="noopener">Facebook</a></li>
+                        <li><a href="https://www.resodiary.com/" target="_blank" rel="noopener">Book a Table</a></li>
+                        <li><a href="mailto:info@devita.net.au">Email Us</a></li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/devitamanly/" target="_blank" rel="noopener" aria-label="DeVita Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/devitamanly/" target="_blank" rel="noopener" aria-label="DeVita Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 DeVita &mdash; Tastes of Napoli. All rights reserved.</p>
+                <p style="margin-top: 6px; font-size: 0.8rem;">Sunday 10% surcharge &bull; Public Holiday 15% surcharge</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll detection for navbar + reveal animations -->
+    <script>
+        (function() {
+            // Navbar scroll
+            var navbar = document.getElementById('navbar');
+            var scrollThreshold = 80;
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > scrollThreshold) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+            // Close mobile menu when clicking a nav link
+            var navLinks = document.querySelectorAll('.nav-links a');
+            var hamburgerToggle = document.getElementById('hamburger-toggle');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    hamburgerToggle.checked = false;
+                });
+            });
+            // Scroll reveal animations
+            var reveals = document.querySelectorAll('.reveal');
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+            reveals.forEach(function(el) { observer.observe(el); });
+        })();
+    </script>
+
+</body>
+</html>
